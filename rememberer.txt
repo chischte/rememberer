@@ -1,14 +1,10 @@
-﻿
-*******************************************************************
+﻿*******************************************************************
 ToDo:
 *******************************************************************
-...create timeshift snapshot on flugchischte
-...update flugchischte ignore lid closed parameter
 ...restore dotfiles on bodechischte
-...clean up github code!!! ...create readmy with "goodies list"
-...separate commit for rememberer?
-...Synology router zurückgeben, Fehlerbeschrieb erstellen
-...TypingTrainer!!!
+...clean up github code
+...return synology router
+...TypingTraine
 
 *******************************************************************
 ADD EXISTING GITHUB PROJECT TO ECLIPSE:

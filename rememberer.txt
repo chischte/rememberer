@@ -603,7 +603,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 	Couldn't run /usr/bin/dumpcap in child process: Permission denied
 	...works after short command line entry and restart
 
-
 *********************************************************************************
 *********************************************************************************
 *********************************************************************************

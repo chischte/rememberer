@@ -1,4 +1,68 @@
-﻿**********************************************************************************
+﻿*********************************************************************************
+*** CLONEZILLA SETTINGS
+*********************************************************************************
+	SETTINGS TO ENABLE BKP COPY:
+	(default settings did not work, because of an error on sda4) 
+	
+	CHECK   -q1 copy sector by sector
+	UNCHECK -r  do not reset filesize (not sure if necessary)
+	CHECK   -icds do not check destination disk size
+	SKIP FSCK
+*********************************************************************************
+*** SHORTCUTS
+*********************************************************************************
+	y*** ECLIPSE SHORTCUTS
+	Zeilenausrichten: Ctrl+i
+	switch Editor/Console: Ctrl+F7
+	Expand:       Ctrl+ä (custom)
+	Expand all:   Ctrl+ü
+	Collapse:     Ctrl+ö (custom)
+	Collapse all: Ctrl+p
+
+	*** VIM:
+	Shift-* - jump to same word! :)
+	. - repeat command
+	w >> forward by word
+	dw - delete word forward
+	b - backward by word
+	r - replace one character
+	R - begin replace mode	
+	0 - move to beginning of current line
+	$ - move to end of line
+	{ - beginning of current paragraph
+	} - beginning of next paragraph
+	G - move t bottom of file
+	gg - move to start of file 
+	% . - jump to counterpart!!! [...] (...) {...}
+	Ctrl+AltGr+] - jump to the ctag
+	Ctrl+u >> move up half a screen
+	Ctrl+d >> move down half a screen	
+	ZZ = :wq
+	yy - yank current line
+	Ctr+o - jump to previous location						
+	Ctrl+i or TAB - jump to next location
+	:r file - reads file into current workspace
+	:/cats - search cats ...n - next N - previous
+	:g/oldtext/newtext/g - replace text
+	
+	***VIM splitwindow		
+	:split ... :vsplit ...:	
+	Ctrl+w +T - maximize active window
+	Ctrl+w +q close active window
+	Ctrl+w Ctrl+w - jump to different splitwindow
+	Ctrl+w q - quit splitwindow
+	Ctrl+w = - make all windows equal size
+	
+	*** FIREFOX
+	Ctrl+T ...opens a new tab
+	Ctrl+L ...jumps to adress bar
+
+	*** GNOME TERMINAL
+	Ctrl Page Up/Page Down >> change tab
+
+	*** ECLIM
+	:lopen >> show error list in vim/eclim
+**********************************************************************************
 INSTALL GNS3 Network simulation tool
 **********************************************************************************
 	sudo add-apt-repository ppa:gns3/ppa
@@ -44,7 +108,9 @@ ARDUINO STYLE GUIDE
 	CONSTANTS:  THIS_IS_A_CONSTANT
 	FUNCTIONS:  ThisIsAFunctionName
 	VARIABLES:  thisIsALocalOrGlobalVariable
-
+	INSTANCES:  thisIsANormalInstanceOfAClass 
+							ThisIsAnInstanceOfAClassOfAnActuatorOrASwitchOrASensor
+							
 	Put a space between comment and //
 	No space before uncommented code or *****starlines
 	...prefer local variables to global ones if possible
@@ -163,59 +229,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 	  ...did not work: MAKE A BOOTABLE STICK WITH WINDOWS ISO:
 		sudo dd if=Win10_1809Oct_EnglishInternational_x64.iso of=/dev/sdb bs=4M status=progress conv=fsync
 *********************************************************************************
-*** SHORTCUTS
-*********************************************************************************
-	y*** ECLIPSE SHORTCUTS
-	Zeilenausrichten: Ctrl+i
-	switch Editor/Console: Ctrl+F7
-	Expand: Ctrl+ö (custom)
-	Collapse:Ctrl+ä (custom)
-	Collapse all: Ctrl+ü
-
-	*** VIM:
-	Shift-* - jump to same word! :)
-	. - repeat command
-	w >> forward by word
-	dw - delete word forward
-	b - backward by word
-	r - replace one character
-	R - begin replace mode	
-	0 - move to beginning of current line
-	$ - move to end of line
-	{ - beginning of current paragraph
-	} - beginning of next paragraph
-	G - move t bottom of file
-	gg - move to start of file 
-	% . - jump to counterpart!!! [...] (...) {...}
-	Ctrl+AltGr+] - jump to the ctag
-	Ctrl+u >> move up half a screen
-	Ctrl+d >> move down half a screen	
-	ZZ = :wq
-	yy - yank current line
-	Ctr+o - jump to previous location						
-	Ctrl+i or TAB - jump to next location
-	:r file - reads file into current workspace
-	:/cats - search cats ...n - next N - previous
-	:g/oldtext/newtext/g - replace text
-	
-	***VIM splitwindow		
-	:split ... :vsplit ...:	
-	Ctrl+w +T - maximize active window
-	Ctrl+w +q close active window
-	Ctrl+w Ctrl+w - jump to different splitwindow
-	Ctrl+w q - quit splitwindow
-	Ctrl+w = - make all windows equal size
-	
-	*** FIREFOX
-	Ctrl+T ...opens a new tab
-	Ctrl+L ...jumps to adress bar
-
-	*** GNOME TERMINAL
-	Ctrl Page Up/Page Down >> change tab
-
-	*** ECLIM
-	:lopen >> show error list in vim/eclim
-*********************************************************************************
 *** ARDUINO  
 *********************************************************************************
 	***USING ARDUINO IDE
@@ -268,7 +281,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 
 	        How to reallocate home folder:
 	        https://help.ubuntu.com/community/Partitioning/Home/Moving
-    
 	*********************************************************************************
 	*** SETUP DUAL BOOT LINUX MINT / WINDOWS 10 (legacy BIOS)
 	*********************************************************************************
@@ -287,8 +299,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 		$ sudo apt-get update
 		$ sudo apt-get install grub-customizer ...run grub-customizer
-
-
 	*********************************************************************************
 	***INSTALL VIM:
 	*********************************************************************************
@@ -345,12 +355,17 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		sudo apt-get install default-jdk
 		java -version shows: openjdk version "11.0.3" 2019-04-16
 		
-		SET JAVA HOME VARIABLE IN /etc/bash.bashrc #all users:
-        	export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64
-		export PATH=$JAVA_HOME/bin:$PATH
+		Update the path variables in ~/.bashrc
 
 		which java shows: /usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java
 		echo $JAVA_HOME shows:/usr/lib/jvm/java-1.11.0-openjdk-amd64	
+	*********************************************************************************
+	*** INSTALL  JAVA 13 
+	*********************************************************************************
+		$	sudo add-apt-repository ppa:linuxuprising/java
+		$	sudo apt update
+		$	sudo apt install oracle-java13-installer
+		$	sudo apt install oracle-java13-set-default
 
 	*********************************************************************************
 	*** INSTALL AND SETUP ONEDRIVE
@@ -384,8 +399,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		$ onedrive --synchronize --resync	(alias resync)
 		REGULAR UPDATE SYNC:
 		$ onedrive --synchronize (alias osync)
-		
-
 	*********************************************************************************
 	*** INSTALL ECLIPSE 
 	*********************************************************************************
@@ -466,7 +479,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		delete the default ino
 		DONE! ...an easier way would be nice, git import did not work.
 		*****************************************************
-
 	*********************************************************************************
 	*** INSTALL LIBRE OFFICE
 	*********************************************************************************
@@ -494,7 +506,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		...add shared folder
 		REBOOT ...voila shared folder (containing multisim installer) should be visible
 	*********************************************************************************
-
 		create aliases in bash.bashrc
 	    *********************************************************************************
 		  #aliases "hi, hey and bye"
@@ -602,7 +613,6 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 	sudo apt-get install wireshark
 	Couldn't run /usr/bin/dumpcap in child process: Permission denied
 	...works after short command line entry and restart
-
 *********************************************************************************
 *********************************************************************************
 *********************************************************************************

@@ -20,7 +20,7 @@ WINDOWS10:
 *********************************************************************************
 
 CONFIG OPTIONS:
-	ADD FOLOWING LINES TO /boot/config.txt:
+	ADD / UNCOMMENT THE FOLOWING LINES TO /boot/config.txt:
 	hdmi_force_hotplug=1
 	hdmi_drive=2
 

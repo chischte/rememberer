@@ -214,20 +214,7 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 		run example code in eclipse:
 		https://raw.githubusercontent.com/zeth/inputs/master/examples/gamepad_example.py
 		works!
-*********************************************************************************
-*** SETTING UP A PI
-*********************************************************************************
-		download raspian from www.raspberrypi.org
-		Raspbian Stretch with desktop and recommended software
-		insert SD-Card to PC
-		check where it has been mounted with lsblk
-		unmount the SD card (umount /media/realslimshady/6537-6531
-		unzip the downloaded image and write it on the card:
 
-		unzip -p 2019-04-08-raspbian-stretch-full.zip | sudo dd of=/dev/sdb bs=4M status=progress conv=fsync
-
-	  ...did not work: MAKE A BOOTABLE STICK WITH WINDOWS ISO:
-		sudo dd if=Win10_1809Oct_EnglishInternational_x64.iso of=/dev/sdb bs=4M status=progress conv=fsync
 *********************************************************************************
 *** ARDUINO  
 *********************************************************************************

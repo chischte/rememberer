@@ -106,8 +106,9 @@ ARDUINO STYLE GUIDE
 	PINS:       const byte THIS_IS_A_PIN
 						  instead of "PIN" there can also be VALVE, MOTOR, BUTTON, RELAY... at the end
 	CONSTANTS:  THIS_IS_A_CONSTANT
-	FUNCTIONS:  ThisIsAFunctionName
+	FUNCTIONS:  thisIsAFunctionName
 	VARIABLES:  thisIsALocalOrGlobalVariable
+	CLASS:			ThisIsAClass
 	INSTANCES:  thisIsANormalInstanceOfAClass 
 							ThisIsAnInstanceOfAClassOfAnActuatorOrASwitchOrASensor
 							

@@ -25,3 +25,6 @@ CONFIG OPTIONS:
 	hdmi_drive=2
 
 This options should force a HDMI connection.
+
+*********************************************************************************
+When creating a new user, make sure it is in all groups (sudo, I2C, SPI ...)

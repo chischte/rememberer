@@ -28,3 +28,42 @@ This options should force a HDMI connection.
 
 *********************************************************************************
 When creating a new user, make sure it is in all groups (sudo, I2C, SPI ...)
+
+
+
+*********************************************************************************
+*** CLONE SD-CARD
+*********************************************************************************
+CREATE BACKUP FROM SD CARD TO LINUX PC:
+	df -h ...find path of the sd card
+	sudo dd if=/dev/sdc of=/home/michi/raspi_bkp/bkp_robopi_2020_03_13.img
+	
+RESTORE BACKUP TO NEW SD CARD
+	perform file system check (optional)
+		df-h ...find path of the sd card
+		umount /dev/sdc ...if only one partition
+		umount /dev/sdc1 && umount /dev/sdc2 ...if more than one partition
+		sudo fsck -C /dev/sdc1
+		sudo fsck -C /dev/sdc2
+		
+	
+	format card (optional if card is new)
+		df-h ...find path of the sd card
+		umount /dev/sdc ...if only one partition
+		umount /dev/sdc1 &&	umount /dev/sdc2 ...if more than one partition
+		sudo mkdosfs -I -F32 /dev/sdc ...formats the card
+	remove card and reinsert it
+	restore backup to card:
+		sudo dd if=/home/michi/raspi_bkp/bkp_robopi_2020_03_13.img of/dev/sdc
+	
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	

@@ -101,17 +101,24 @@ INSTALL MySQL
 	...change user of "LOCAL INSTANCE 3306" to realslimshady
 	...works!
 **********************************************************************************
-ARDUINO STYLE GUIDE
+ARDUINO / C++ STYLE GUIDE inspired by https://github.com/isocpp/CppCoreGuidelines
 **********************************************************************************
 	NAMING:
 	PINS:       const byte THIS_IS_A_PIN
-						  instead of "PIN" there can also be VALVE, MOTOR, BUTTON, RELAY... at the end
+				instead of "PIN" there can also be VALVE, MOTOR, BUTTON, RELAY... at the end
 	CONSTANTS:  THIS_IS_A_CONSTANT
-	FUNCTIONS:  thisIsAFunctionName
-	VARIABLES:  thisIsALocalOrGlobalVariable
-	CLASS:			ThisIsAClass
-	INSTANCES:  thisIsANormalInstanceOfAClass 
-							ThisIsAnInstanceOfAClassOfAnActuatorOrASwitchOrASensor
+	VARIABLES:  this_is_a_variable
+	FUNCTIONS:  this_is_a_function 
+	CLASS:		This_is_a_class 
+	OBJECT:		this_is_an_object
+	METHOD:		this_is_a_method (member function of a class)
+	FILES:		this_is_a_file.xyz
+				this_is_a_source_file.h
+				this_is_a_header_file.h
+				ev. MainHeaderFile.h
+				ev. MainSourceFile.cpp
+	
+	
 							
 	Put a space between comment and //
 	No space before uncommented code or *****starlines
@@ -122,6 +129,7 @@ ARDUINO STYLE GUIDE
 		2 Spaces (Tab Size)
 		4 Spaces" for wrapped lines
 		Line wrapping after 100 columns
+	
 ***********************************************************************************
 ADD EXISTING GITHUB PROJECT TO ECLIPSE:
 ***********************************************************************************

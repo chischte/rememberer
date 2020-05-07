@@ -101,7 +101,11 @@ INSTALL MySQL
 	...change user of "LOCAL INSTANCE 3306" to realslimshady
 	...works!
 **********************************************************************************
-ARDUINO / C++ STYLE GUIDE inspired by https://github.com/isocpp/CppCoreGuidelines
+ARDUINO / C++ STYLE GUIDE inspired by
+
+https://github.com/isocpp/CppCoreGuidelines (Typenames start capital)
+http://www.stroustrup.com/bs_faq2.html#classes
+https://github.com/boostorg/geometry/wiki/Guidelines-for-Developers (Even type names start lower caseletter)
 **********************************************************************************
 	NAMING:
 	PINS:       const byte THIS_IS_A_PIN
@@ -109,7 +113,7 @@ ARDUINO / C++ STYLE GUIDE inspired by https://github.com/isocpp/CppCoreGuideline
 	CONSTANTS:  THIS_IS_A_CONSTANT
 	VARIABLES:  this_is_a_variable
 	FUNCTIONS:  this_is_a_function 
-	CLASS:		This_is_a_class 
+	TYPES:		This_is_a_class (classes, structs, typedefs) ...standard library C++ Types are lowercase
 	OBJECT:		this_is_an_object
 	METHOD:		this_is_a_method (member function of a class)
 	FILES:		this_is_a_file.xyz

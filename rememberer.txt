@@ -121,6 +121,8 @@ https://github.com/boostorg/geometry/wiki/Guidelines-for-Developers (Even type n
 				this_is_a_header_file.h
 				ev. MainHeaderFile.h
 				ev. MainSourceFile.cpp
+	COMMENTS:	// this is a comment at the end of a codeline
+				// THIS IS A "HEADER-COMMENT":
 	
 	
 							

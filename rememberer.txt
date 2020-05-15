@@ -63,18 +63,18 @@
 
 	*** ECLIM
 	:lopen >> show error list in vim/eclim
-**********************************************************************************
+********************************************************************************
 INSTALL GNS3 Network simulation tool
-**********************************************************************************
+********************************************************************************
 	sudo add-apt-repository ppa:gns3/ppa
 	sudo apt update
 	sudo apt-get install dynamips gns3
 
 	add routers: edit/preferences/dynamips/iosrouters/(scroll down)/new/..select bin
 	from ios bin folder stored on netzwerktechnik
-**********************************************************************************
+********************************************************************************
 INSTALL MySQL
-**********************************************************************************
+********************************************************************************
 	sudo apt-get update
 
 	INSTALL MySQL Workbench:
@@ -100,45 +100,10 @@ INSTALL MySQL
 	START mysql-workbench
 	...change user of "LOCAL INSTANCE 3306" to realslimshady
 	...works!
-**********************************************************************************
-ARDUINO / C++ STYLE GUIDE inspired by
-
-https://github.com/isocpp/CppCoreGuidelines (Typenames start capital)
-http://www.stroustrup.com/bs_faq2.html#classes
-https://github.com/boostorg/geometry/wiki/Guidelines-for-Developers (Even type names start lower caseletter)
-**********************************************************************************
-	NAMING:
-	PINS:       const byte THIS_IS_A_PIN
-				instead of "PIN" there can also be VALVE, MOTOR, BUTTON, RELAY... at the end
-	CONSTANTS:  THIS_IS_A_CONSTANT
-	VARIABLES:  this_is_a_variable
-	FUNCTIONS:  this_is_a_function 
-	TYPES:		This_is_a_class (classes, structs, typedefs) ...standard library C++ Types are lowercase
-	OBJECT:		this_is_an_object
-	METHOD:		this_is_a_method (member function of a class)
-	FILES:		this_is_a_file.xyz
-				this_is_a_source_file.h
-				this_is_a_header_file.h
-				ev. MainHeaderFile.h
-				ev. MainSourceFile.cpp
-	COMMENTS:	// this is a comment at the end of a codeline
-				// THIS IS A "HEADER-COMMENT":
 	
-	
-							
-	Put a space between comment and //
-	No space before uncommented code or *****starlines
-	...prefer local variables to global ones if possible
-	FORMATER SETTINGS:
-		K&R style
-		Indentation "Spaces only"
-		2 Spaces (Tab Size)
-		4 Spaces" for wrapped lines
-		Line wrapping after 100 columns
-	
-***********************************************************************************
+*********************************************************************************
 ADD EXISTING GITHUB PROJECT TO ECLIPSE:
-***********************************************************************************
+*********************************************************************************
 	USE ECLIPSE IMPORT>GIT>SMARTIMPORT
 	
 	EDIT A LIBRARY IN ECLIPSE-ARDUINO (SLOEBER)
@@ -147,9 +112,9 @@ ADD EXISTING GITHUB PROJECT TO ECLIPSE:
 	As project name use the same as for the exampl code.
 	Import  a link to the example code using new\advanced\link to system...
 	Now Example code and library can be edited.
-***********************************************************************************
+*********************************************************************************
 STORE DOTFILES VIA GIT:
-***********************************************************************************
+*********************************************************************************
 	FROM TUTORIAL: https://www.atlassian.com/git/tutorials/dotfiles
 	CREATE A BARE REPOSITORY:
 	create folder ~/git/dotfiles
@@ -173,9 +138,9 @@ STORE DOTFILES VIA GIT:
 	...push files
 	$ dotgit push origin master
 	...enter username and password
-***********************************************************************************
+*********************************************************************************
 INSTALL DOTFILES ONTO A NEW SYSTEM:
-***********************************************************************************
+*********************************************************************************
 	FROM TUTORIAL: https://www.atlassian.com/git/tutorials/dotfiles
 	ADD ALIAS TO .bashrc:
 	alias dotgit="/usr/bin/git --git-dir=$HOME/GIT/dotfiles/ --work-tree=$HOME"
@@ -188,12 +153,12 @@ INSTALL DOTFILES ONTO A NEW SYSTEM:
 	$ dotgit checkout
 	$ dotgit config --local status.showUntrackedFiles no
 	...DONE.
-***********************************************************************************
+*********************************************************************************
 CONNECT TO CELLULAR NETWORK USING A SIM CARD
-***********************************************************************************
+*********************************************************************************
 	Mobile No: XXX
 	PIN XXXX (disabled)
-	**********************************************************************************
+	********************************************************************************
 	INFOS FROM WINDOWS:
 	Network & Internet Settings:
 	yallo (HSPA)
@@ -207,7 +172,7 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 	SIM ICCID: XXXX
 	Device Manger:
 	DW5560 HSPA+ Mobile Broadband
-	**********************************************************************************
+	********************************************************************************
 	TO RUN IN LINUX:
 	In Network Manager:
 	Add Network Connection of type "mobile broadband"
@@ -251,9 +216,9 @@ CONNECT TO CELLULAR NETWORK USING A SIM CARD
 	        Deactivate checkbox "installation of third party software"
 	        Start linux with usb stick and make linux partition smaller usin Gparted to make space for windows installation (102400MB)
 	        Install Windows 
-	***********************************************************************************
+	*********************************************************************************
 	Windows 10 OEM Product Key XXXX (stored on passwordmanager)
-	***********************************************************************************
+	*********************************************************************************
 	        Boot with linux usb stick
 	        install and run boot-repair
 	        boot into linux
@@ -579,7 +544,7 @@ ARCHIVE / OLD UNUSED STUFF
 	*********************************************************************************
 		sudo apt-get install lftp
 		create bash script /usr/local/bin/ftp-push.sh:
-			***********************************************************************************
+			*********************************************************************************
 		#!/bin/bash
 		#create a ZIP of the current GIT folder
 		cd ~/SyncBox/
@@ -603,9 +568,9 @@ ARCHIVE / OLD UNUSED STUFF
 		"
 		#delete the local GIT.zip archive
 		#rm ~/.ftptransfer/GIT.zip
-		***********************************************************************************
+		*********************************************************************************
 		create bash script /usr/local/bin/ftp-pull.sh:
-		***********************************************************************************
+		*********************************************************************************
 		#!/bin/bash
 		#delete previous GIT.zip
 		rm -rf ~/.ftptransfer/GIT.zip
@@ -635,7 +600,7 @@ ARCHIVE / OLD UNUSED STUFF
 		mv ~/.ftptransfer/GIT ~/SyncBox/GIT
 		#delete zipped archive
 		#rm ~/.ftptransfer/GIT.zip
-		***********************************************************************************
+		*********************************************************************************
 	*********************************************************************************
 	*** WLAN LOGIN STEPS
 	*********************************************************************************

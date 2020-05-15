@@ -1,0 +1,65 @@
+********************************************************************************
+C++ STYLE GUIDE 
+********************************************************************************
+
+Inspired by:
+https://github.com/isocpp/CppCoreGuidelines (Typenames start capital)
+http://www.stroustrup.com/bs_faq2.html#classes
+https://github.com/boostorg/geometry/wiki/Guidelines-for-Developers (here, even type names start with a lower caseletter)
+********************************************************************************
+
+********************************************************************************
+FORMATER SETTINGS:
+********************************************************************************
+
+• Clang-Format formatter (VSCode)
+• K&R style (Eclipse)
+• Indentation "Spaces only", no tabs
+• 2 Spaces (Tab Size)
+• 4 Spaces" for wrapped lines
+• Line wrapping after 100 columns
+
+********************************************************************************
+NAMING:
+********************************************************************************
+PINS:         const byte THIS_IS_A_PIN
+              instead of "PIN" there can also be VALVE, MOTOR, BUTTON, RELAY... at the end
+CONSTANTS:  THIS_IS_A_CONSTANT
+VARIABLES:  this_is_a_variable
+FUNCTIONS:  this_is_a_function 
+TYPES:		This_is_a_class (classes, structs, typedefs, ...standard library C++ Types are lowercase)
+OBJECTS:	this_is_an_object
+METHODS:	this_is_a_method (member function of a class)
+FILES:		this_is_a_file.xyz
+			this_is_a_source_file.h
+			this_is_a_header_file.h
+			
+			ThisIsTheMainHeaderFile.h
+			ThisIsTheMainSourceFile.cpp
+			
+********************************************************************************
+COMMENTS AND LINES:	
+********************************************************************************
+
+• Long dash- and starlines must not be longer than the 80th character of the line
+
+// this is a comment at the end of a codeline
+
+								
+// THIS IS A "HEADER-COMMENT" WITH A STARLINE: 
+//******************************************************************************	
+// it marks beginning and somtimes end of important sections globally
+
+
+				
+// This is a long dash line, it structures code globally
+//------------------------------------------------------------------------------
+
+
+				
+// This is a short dash line, it has 50 characters
+// It structures code in functions
+//------------------------------------------------
+********************************************************************************
+
+*END*OF*STYLE*GUIDE*************************************************************

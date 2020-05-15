@@ -1,0 +1,55 @@
+*********************************************************************************
+*** SETTING UP A PI SD
+*********************************************************************************
+download raspian from www.raspberrypi.org
+raspbian Stretch with desktop and recommended software
+insert SD-Card to PC
+
+LINUX:
+	...update: check out if "balena Etcher" client works on linux
+	check where it has been mounted with lsblk
+	unmount the SD card (umount /media/realslimshady/6537-6531
+	unzip the downloaded image and write it on the card:
+	unzip -p 2019-04-08-raspbian-stretch-full.zip | sudo dd of=/dev/sdb bs=4M status=progress conv=fsync
+
+
+WINDOWS10:
+	DOWNLOAD AND INSTALL BALENA ETCHER
+	BURN THE RASPBIAN SD CARD
+	
+*********************************************************************************
+
+CONFIG OPTIONS:
+	ADD / UNCOMMENT THE FOLOWING LINES TO /boot/config.txt:
+	hdmi_force_hotplug=1
+	hdmi_drive=2
+
+This options should force a HDMI connection.
+
+*********************************************************************************
+When creating a new user, make sure it is in all groups (sudo, I2C, SPI ...)
+
+
+
+*********************************************************************************
+*** CLONE SD-CARD
+*********************************************************************************
+CREATE BACKUP FROM SD CARD TO LINUX PC:
+	df -h ...find path of the sd card
+	sudo dd if=/dev/sdc of=/home/realslimshady/raspi_bkp/bkp_robopi_2020_03_13.img
+	
+RESTORE BACKUP TO NEW SD CARD
+	use gparted to delete all partitions
+	sudo dd if=/home/realslimshady/raspi_bkp/bkp_robopi_2020_03_13.img of=/dev/sdb bs=16M
+	
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	

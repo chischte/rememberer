@@ -41,7 +41,7 @@ FILES:		this_is_a_file.xyz
 COMMENTS AND LINES:	
 ********************************************************************************
 
-• Long dash- and starlines must not be longer than the 80th character of the line
+• Long dash- and starlines must end exactly at the 80th character of the line
 
 // this is a comment at the end of a codeline
 

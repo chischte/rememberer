@@ -1,0 +1,77 @@
+********************************************************************************
+SHORTCUTS **********************************************************************
+********************************************************************************
+
+VSCODE AND INTELLIJ ------------------------------------------------------------
+
+    Customised IntelliJ "Keymap" and VSCode "Keyboard Shortcuts"
+	-----------------------------------------------------------
+    MOVE LINE --------> Alt + Up / Alt + Down (VSCode default)
+    DELETE LINE ------> Ctrl + Delete
+    DUPLICATE LINE ---> Ctrl + D
+    REFACTOR/RENAME --> F2 (VS default)
+	REFORMAT CODE ---->	Ctrl + Alt + L (VSCode default)
+    
+	COLLAPSE ALL -----> Ctrl + K + 0 (VSCode default)
+    EXPAND ALL -------> Ctrl + K + J (VSCode default)
+	
+	COLLAPSE SECTION --> Ctrl + K + K
+	TOGGLE (VS ONLY) --> Ctrl + K + Keyboard
+	EXPAND SECTION ----> Ctrl + K + L
+	
+    
+    
+ 
+VARIOUS / OLDER SHORTCUTS ------------------------------------------------------
+
+	y*** ECLIPSE SHORTCUTS
+	Zeilenausrichten: Ctrl+i
+	switch Editor/Console: Ctrl+F7
+	Expand:       Ctrl+ä (custom)
+	Expand all:   Ctrl+ü
+	Collapse:     Ctrl+ö (custom)
+	Collapse all: Ctrl+p
+
+	*** VIM:
+	Shift-* - jump to same word! :)
+	. - repeat command
+	w >> forward by word
+	dw - delete word forward
+	b - backward by word
+	r - replace one character
+	R - begin replace mode	
+	0 - move to beginning of current line
+	$ - move to end of line
+	{ - beginning of current paragraph
+	} - beginning of next paragraph
+	G - move t bottom of file
+	gg - move to start of file 
+	% . - jump to counterpart!!! [...] (...) {...}
+	Ctrl+AltGr+] - jump to the ctag
+	Ctrl+u >> move up half a screen
+	Ctrl+d >> move down half a screen	
+	ZZ = :wq
+	yy - yank current line
+	Ctr+o - jump to previous location						
+	Ctrl+i or TAB - jump to next location
+	:r file - reads file into current workspace
+	:/cats - search cats ...n - next N - previous
+	:g/oldtext/newtext/g - replace text
+	
+	***VIM splitwindow		
+	:split ... :vsplit ...:	
+	Ctrl+w +T - maximize active window
+	Ctrl+w +q close active window
+	Ctrl+w Ctrl+w - jump to different splitwindow
+	Ctrl+w q - quit splitwindow
+	Ctrl+w = - make all windows equal size
+	
+	*** FIREFOX
+	Ctrl+T ...opens a new tab
+	Ctrl+L ...jumps to adress bar
+
+	*** GNOME TERMINAL
+	Ctrl Page Up/Page Down >> change tab
+
+	*** ECLIM
+	:lopen >> show error list in vim/eclim

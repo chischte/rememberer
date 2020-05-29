@@ -12,13 +12,13 @@ VSCODE AND INTELLIJ ------------------------------------------------------------
     DELETE LINE -------> Ctrl + Delete
     DUPLICATE LINE ----> Ctrl + D
     REFACTOR/RENAME ---> F2                  (VSCode default)
-	REFORMAT CODE -----> Ctrl + Alt + L      (VSCode default)
+	FORMAT CODE -------> Ctrl + Alt + L      
     
 	COLLAPSE ALL ------> Ctrl + K + 0        (VSCode default)
     EXPAND ALL --------> Ctrl + K + J        (VSCode default)
 	
 	COLLAPSE SECTION --> Ctrl + K + K
-	TOGGLE (VS ONLY) --> Ctrl + K + Keyboard
+	TOGGLE (VS ONLY) --> Ctrl + K + K
 	EXPAND SECTION ----> Ctrl + K + L
 	
     

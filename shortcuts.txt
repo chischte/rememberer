@@ -4,27 +4,28 @@ SHORTCUTS **********************************************************************
 
 VSCODE AND INTELLIJ ------------------------------------------------------------
 
-    Customised IntelliJ "Keymap" and VSCode "Keyboard Shortcuts"
-	-----------------------------------------------------------
-    MOVE LINE --------> Alt + Up / Alt + Down (VSCode default)
-    DELETE LINE ------> Ctrl + Delete
-    DUPLICATE LINE ---> Ctrl + D
-    REFACTOR/RENAME --> F2 (VS default)
-	REFORMAT CODE ---->	Ctrl + Alt + L (VSCode default)
     
-	COLLAPSE ALL -----> Ctrl + K + 0 (VSCode default)
-    EXPAND ALL -------> Ctrl + K + J (VSCode default)
+	Customised IntelliJ "Keymap" and VSCode "Keyboard Shortcuts"
+	-----------------------------------------------------------
+    
+	MOVE LINE ---------> Alt  + Up / Down    (VSCode default)
+    DELETE LINE -------> Ctrl + Delete
+    DUPLICATE LINE ----> Ctrl + D
+    REFACTOR/RENAME ---> F2                  (VSCode default)
+	REFORMAT CODE -----> Ctrl + Alt + L      (VSCode default)
+    
+	COLLAPSE ALL ------> Ctrl + K + 0        (VSCode default)
+    EXPAND ALL --------> Ctrl + K + J        (VSCode default)
 	
 	COLLAPSE SECTION --> Ctrl + K + K
 	TOGGLE (VS ONLY) --> Ctrl + K + Keyboard
 	EXPAND SECTION ----> Ctrl + K + L
 	
     
-    
- 
+     
 VARIOUS / OLDER SHORTCUTS ------------------------------------------------------
 
-	y*** ECLIPSE SHORTCUTS
+	*** ECLIPSE SHORTCUTS
 	Zeilenausrichten: Ctrl+i
 	switch Editor/Console: Ctrl+F7
 	Expand:       Ctrl+ä (custom)
@@ -73,5 +74,3 @@ VARIOUS / OLDER SHORTCUTS ------------------------------------------------------
 	*** GNOME TERMINAL
 	Ctrl Page Up/Page Down >> change tab
 
-	*** ECLIM
-	:lopen >> show error list in vim/eclim

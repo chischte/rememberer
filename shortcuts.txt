@@ -21,6 +21,8 @@ VSCODE AND INTELLIJ ------------------------------------------------------------
 	TOGGLE (VS ONLY) --> Ctrl + K + K
 	EXPAND SECTION ----> Ctrl + K + L
 	
+	TOGGLE LINE COMMENT> Ctrl + Shift + 7
+	
     
      
 VARIOUS / OLDER SHORTCUTS ------------------------------------------------------

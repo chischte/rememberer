@@ -8,22 +8,23 @@ VSCODE AND INTELLIJ ------------------------------------------------------------
 	Customised IntelliJ "Keymap" and VSCode "Keyboard Shortcuts"
 	-----------------------------------------------------------
     
-	MOVE LINE ---------> Alt  + Up / Down    (VSCode default)
-    DELETE LINE -------> Ctrl + Delete
-    DUPLICATE LINE ----> Ctrl + D
-    REFACTOR/RENAME ---> F2                  (VSCode default)
-	FORMAT CODE -------> Ctrl + Alt + L      
+	MOVE LINE -----------> Alt  + Up / Down   (VSCode default)
+    DELETE LINE ---------> Ctrl + Delete
+    DUPLICATE LINE ------> Ctrl + D
+    REFACTOR/RENAME -----> F2                 (VSCode default)
+	FORMAT CODE ---------> Ctrl + Alt + L      
     
-	COLLAPSE ALL ------> Ctrl + K + 0        (VSCode default)
-    EXPAND ALL --------> Ctrl + K + J        (VSCode default)
+	COLLAPSE ALL --------> Ctrl + K + 0       (VSCode default)
+    EXPAND ALL ----------> Ctrl + K + J       (VSCode default)
 	
-	COLLAPSE SECTION --> Ctrl + K + K
-	TOGGLE (VS ONLY) --> Ctrl + K + K
-	EXPAND SECTION ----> Ctrl + K + L
+	COLLAPSE SECTION ----> Ctrl + K + K
+	TOGGLE (VS ONLY) ----> Ctrl + K + K
+	EXPAND SECTION ------> Ctrl + K + L
 	
-	TOGGLE LINE COMMENT> Ctrl + Shift + 7
+	TOGGLE LINE COMMENT--> Ctrl + Shift + 7
 	
-    
+	OPEN COMMAND PALETTE-> Ctrl+Shift+P       (VSCode)
+	    
      
 VARIOUS / OLDER SHORTCUTS ------------------------------------------------------
 

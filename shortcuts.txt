@@ -8,8 +8,9 @@ VSCODE AND INTELLIJ ------------------------------------------------------------
 	Customised IntelliJ "Keymap" and VSCode "Keyboard Shortcuts"
 	-----------------------------------------------------------
     
-	MOVE LINE -----------> Alt  + Up / Down   (VSCode default)
-    DELETE LINE ---------> Ctrl + Delete
+	MOVE LINE  UP/DOWN---> Alt  + Up / Down   (VSCode default)
+    MOVE TEXT L/R--------> Alt + Left / right ("moveCarret")
+	DELETE LINE ---------> Ctrl + Delete
     DUPLICATE LINE ------> Ctrl + D
     REFACTOR/RENAME -----> F2                 (VSCode default)
 	FORMAT CODE ---------> Ctrl + Alt + L      

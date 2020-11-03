@@ -20,7 +20,7 @@ WINDOWS10:
 *********************************************************************************
 
 CONFIG OPTIONS:
-	ADD / UNCOMMENT THE FOLOWING LINES TO /boot/config.txt:
+	UNCOMMENT THE FOLOWING LINES TO /boot/config.txt:
 	hdmi_force_hotplug=1
 	hdmi_drive=2
 
@@ -28,8 +28,6 @@ This options should force a HDMI connection.
 
 *********************************************************************************
 When creating a new user, make sure it is in all groups (sudo, I2C, SPI ...)
-
-
 
 *********************************************************************************
 *** CLONE SD-CARD
@@ -42,9 +40,6 @@ RESTORE BACKUP TO NEW SD CARD
 	use gparted to delete all partitions
 	sudo dd if=/home/realslimshady/raspi_bkp/bkp_robopi_2020_03_13.img of=/dev/sdb bs=16M
 	
-		
-		
-		
 	
 	
 	

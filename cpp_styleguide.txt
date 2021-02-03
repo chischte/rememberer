@@ -11,9 +11,7 @@ https://github.com/boostorg/geometry/wiki/Guidelines-for-Developers
 
 FORMATER SETTINGS **************************************************************
 
-
-• Clang-Format formatter (VSCode)
-• K&R style (Eclipse)
+• Install Clang-Format (VSCode) & LLVM (http://llvm.org/releases/x.x.x/LLVM-x.x.x-win64.exe)
 • Indentation "Spaces only", no tabs
 • 2 Spaces (Tab Size)
 • 4 Spaces" for wrapped lines
@@ -39,7 +37,10 @@ FILES:		this_is_a_file.xyz
 			
 COMMENTS AND LINES *************************************************************	
 
-// this is a comment at the end of a codeline
+// This is a comment before a line of code:
+{code}!=[code]@{code.code} -> code.code((code),{"code","code})
+
+{code}!=[code]@{code.code} -> {"code","code}) // this is a comment at the end of a codeline
 
 
 /*
@@ -52,7 +53,7 @@ COMMENTS AND LINES *************************************************************
  * May 2020, Zürich
  * -----------------------------------------------------------------------------
  * RUNTIME:
- * or other relevant stuff
+ * Or other relevant stuff
  * -----------------------------------------------------------------------------
  * TODO:
  * Do this
